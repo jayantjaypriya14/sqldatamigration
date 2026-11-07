@@ -1,0 +1,15 @@
+{
+	"name": "datamigration23-sql-adls",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d0f58969-70b3-49a0-9b51-bcf59e399494",
+		"tenantId": "c4ebdb3e-d86b-4b88-8ddd-7f2b3429c323"
+	}
+}
