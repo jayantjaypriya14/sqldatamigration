@@ -1,0 +1,22 @@
+{
+	"name": "LS_SQL_ONPREM",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "LS_SQL_ONPREM",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-5HRR31O\\SQLEXPRESS",
+			"database": "MigrationData",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "DESKTOP-5HRR31O\\HP",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5MWUzMzRiYi1mNzczLTQ0YTktYjYzYS04NDBkY2IwMDk1ODgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-SELFHOSTED-SQL",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
