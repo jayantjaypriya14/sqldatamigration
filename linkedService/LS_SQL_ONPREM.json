@@ -9,10 +9,10 @@
 			"server": "DESKTOP-5HRR31O\\SQLEXPRESS",
 			"database": "MigrationData",
 			"encrypt": "mandatory",
-			"trustServerCertificate": false,
+			"trustServerCertificate": true,
 			"authenticationType": "Windows",
 			"userName": "DESKTOP-5HRR31O\\HP",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5MWUzMzRiYi1mNzczLTQ0YTktYjYzYS04NDBkY2IwMDk1ODgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1ZTM5ZWVmOC0yOGQ4LTQ5ODAtODUwOS1iMTA2NTNjZjM1MTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "IR-SELFHOSTED-SQL",
