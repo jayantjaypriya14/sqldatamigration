@@ -1,10 +1,6 @@
 {
 	"name": "DS_SINK_PARQUET",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_SINK_PARQUET",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

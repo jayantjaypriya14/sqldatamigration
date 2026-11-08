@@ -1,10 +1,6 @@
 {
 	"name": "DS_SOURCE_ADLS",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "DS_SOURCE_ADLS",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
