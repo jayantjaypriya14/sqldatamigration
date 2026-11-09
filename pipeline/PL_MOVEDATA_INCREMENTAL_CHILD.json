@@ -60,7 +60,8 @@
 					},
 					"ifTrueActivities": [
 						{
-							"name": "Copy data1",
+							"name": "COPYSQL_FULL_INCTLOAD_TABLES",
+							"description": "COPYSQL_FULL_INCTLOAD_TABLES",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -119,6 +120,30 @@
 									"type": "DatasetReference"
 								}
 							]
+						},
+						{
+							"name": "EXEC_UPDATE_WATREMARK_TBL",
+							"description": "EXEC_UPDATE_WATREMARK_TBL",
+							"type": "ExecutePipeline",
+							"dependsOn": [
+								{
+									"activity": "COPYSQL_FULL_INCTLOAD_TABLES",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "PL_SP_CHILD",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true
+							}
 						}
 					]
 				}
