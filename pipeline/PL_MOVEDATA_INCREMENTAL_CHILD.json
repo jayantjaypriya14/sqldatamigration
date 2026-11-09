@@ -117,7 +117,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_SQLTBL_SINK_PARQUET",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Table_Name": {
+											"value": "@pipeline().parameters.TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						},
