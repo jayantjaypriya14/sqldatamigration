@@ -1,0 +1,41 @@
+{
+	"name": "DS_SQLTBL_SINK_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLTBL_SINK_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Table_Name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(dataset().Table_Name,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
+					"type": "Expression"
+				},
+				"fileSystem": "datacontainersink"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "SIC_Code",
+				"type": "UTF8"
+			},
+			{
+				"name": "Description",
+				"type": "UTF8"
+			}
+		]
+	}
+}
