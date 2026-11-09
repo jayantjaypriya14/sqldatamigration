@@ -1,0 +1,26 @@
+{
+	"name": "TR_DATAMOVE_SQL_ADLS",
+	"properties": {
+		"description": "TR_DATAMOVE_SQL_ADLS",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_MOVEDATA_PARENT",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 15,
+				"startTime": "2026-11-10T20:35:00",
+				"endTime": "2026-11-20T12:35:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
