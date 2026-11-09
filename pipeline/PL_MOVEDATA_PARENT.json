@@ -32,6 +32,25 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LP_WATERMARK_TBL",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('LP_WATERMARK_TBL').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
